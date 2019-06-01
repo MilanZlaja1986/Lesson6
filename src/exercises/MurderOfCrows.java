@@ -1,5 +1,6 @@
 package exercises;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 public class MurderOfCrows {
@@ -13,12 +14,26 @@ public class MurderOfCrows {
 	}
 
 	private void findTheDiamond() {
+		int counterOfCrows = 0;
 		/*
 		 * 1. One of the Crows has eaten the diamond. You need to search through the stomach of each Crow, 
 		 * then print the name of the guilty Crow.
 		 */
+		for (int i = 0; i < theMurder.size(); i++) {
+			String stomachContents = Arrays.toString(theMurder.get(i).getStomachContents().toArray());
+			System.out.println("Why Good. Why I had to kill inocent Crow. I found the " + stomachContents.replace("[", "").replace("]", "") + " in the " + theMurder.get(i).getName() + "'s stomach.");
+			if (theMurder.get(i).getStomachContents().contains("diamond")) {
+				System.out.println("The guilty Crow that eat diamond is " + theMurder.get(i).getName() + ".");
+				break;
+			} 
+			else {
+				counterOfCrows++;
+			}		
+			
+		}
 		
 		/* 2. How many innocent crows had to die before the diamond was found? */
+		System.out.println(counterOfCrows + " innocent crows had to die before the diamond was found!");
 		
 	}
 
