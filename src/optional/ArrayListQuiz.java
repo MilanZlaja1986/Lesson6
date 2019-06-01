@@ -2,12 +2,12 @@ package optional;
 
 import java.util.ArrayList;
 
-import junit.framework.TestCase;
+//import junit.framework.TestCase;
 
 /* Use the internets to figure out how to use ArrayLists. Try not to use autocomplete. */
 
-public class ArrayListQuiz extends TestCase {
-//
+//public class ArrayListQuiz extends TestCase {
+
 //	public void testInitialize() throws Exception {
 //		assertNotNull(LearningArrayLists.createArrayList());
 //	}
@@ -99,6 +99,6 @@ public class ArrayListQuiz extends TestCase {
 	
 	/* now do this puzzle: http://apcomputersciencetutoring.com/exam-review/candidatepool-free-response-practice-question/ */
 	
-}
+//}
 
 
